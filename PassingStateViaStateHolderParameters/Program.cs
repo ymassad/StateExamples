@@ -9,7 +9,7 @@ namespace PassingStateViaStateHolderParameters
             var server1StateHolder = new StateHolder<Server1State>(
                 new Server1State(false, DateTime.MinValue));
 
-            FolderProcessingModule.TranslatedDocumentsInFolder(
+            FolderProcessingModule.TranslateDocumentsInFolder(
                 "c:\\inputFolder",
                 "c:\\outputFolder", server1StateHolder);
         }

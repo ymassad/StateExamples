@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            FolderProcessingModule.TranslatedDocumentsInFolder("c:\\inputFolder", "c:\\outputFolder");
+            FolderProcessingModule.TranslateDocumentsInFolder("c:\\inputFolder", "c:\\outputFolder");
         }
     }
 }

@@ -6,7 +6,7 @@ namespace PassingStateViaRefParameters
 {
     public static class FolderProcessingModule
     {
-        public static void TranslatedDocumentsInFolder(string folderPath, string destinationFolderPath, ref Server1State server1State)
+        public static void TranslateDocumentsInFolder(string folderPath, string destinationFolderPath, ref Server1State server1State)
         {
             IEnumerable<Document> documentsEnumerable = GetDocumentsFromFolder(folderPath);
 

@@ -6,7 +6,7 @@ namespace UsingGlobalVariables
 {
     public static class FolderProcessingModule
     {
-        public static void TranslatedDocumentsInFolder(string folderPath, string destinationFolderPath)
+        public static void TranslateDocumentsInFolder(string folderPath, string destinationFolderPath)
         {
             IEnumerable<Document> documentsEnumerable = GetDocumentsFromFolder(folderPath);
 
