@@ -7,7 +7,10 @@ namespace PassingStateViaRefParametersWithIOC
 {
     public static class FolderProcessingModule
     {
-        public static void TranslateDocumentsInFolder(string folderPath, string destinationFolderPath, Func<Document, Document> translateDocument)
+        public static void TranslateDocumentsInFolder(
+            string folderPath,
+            string destinationFolderPath,
+            Func<Document, Document> translateDocument)
         {
             IEnumerable<Document> documentsEnumerable = GetDocumentsFromFolder(folderPath);
 
