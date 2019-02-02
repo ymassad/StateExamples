@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingStateViaParametersAn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingStateViaStateHolderParameters", "PassingStateViaStateHolderParameters\PassingStateViaStateHolderParameters.csproj", "{F4674120-22CB-4860-BEA2-E541AF21CF81}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PassingStateViaRefParametersWithIOC", "PassingStateViaRefParametersWithIOC\PassingStateViaRefParametersWithIOC.csproj", "{F5FECA5D-DABD-4D11-AC57-DED694F618D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F4674120-22CB-4860-BEA2-E541AF21CF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4674120-22CB-4860-BEA2-E541AF21CF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4674120-22CB-4860-BEA2-E541AF21CF81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FECA5D-DABD-4D11-AC57-DED694F618D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FECA5D-DABD-4D11-AC57-DED694F618D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FECA5D-DABD-4D11-AC57-DED694F618D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FECA5D-DABD-4D11-AC57-DED694F618D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
