@@ -29,8 +29,6 @@ namespace PassingStateViaRefParametersWithIOC
         {
             var language = DetectLanguage(paragraphText);
 
-            //var server1State = new Server1State(false, DateTime.MinValue);
-
             return language == Language.German
                 ? translateFromGerman(paragraphText)
                 : translateFromSpanish(paragraphText);
