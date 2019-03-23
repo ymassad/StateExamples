@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{73660AFF-39A8-4A88-8F4E-A7E5B7FCFC05}</ProjectGuid>
+    <ProjectGuid>{FEDD300A-4B85-4AD0-AAAA-5E8FD7C5B932}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MultithreadingAndRefStateParameters</RootNamespace>
-    <AssemblyName>MultithreadingAndRefStateParameters</AssemblyName>
+    <RootNamespace>MultithreadingAndRefStateParametersAndLockStatement</RootNamespace>
+    <AssemblyName>MultithreadingAndRefStateParametersAndLockStatement</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
