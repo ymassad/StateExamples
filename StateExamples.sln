@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadingAndRefStatePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadingAndRefStateParametersAndStateHolder", "MultithreadingAndRefStateParametersAndStateHolder\MultithreadingAndRefStateParametersAndStateHolder.csproj", "{9AC28E3B-473E-40FC-A943-37BE5C93C569}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultithreadingAndUsingReturnValue", "MultithreadingAndUsingReturnValue\MultithreadingAndUsingReturnValue.csproj", "{4FAB0009-4597-43A3-A5DD-7C318A29ACDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9AC28E3B-473E-40FC-A943-37BE5C93C569}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AC28E3B-473E-40FC-A943-37BE5C93C569}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AC28E3B-473E-40FC-A943-37BE5C93C569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FAB0009-4597-43A3-A5DD-7C318A29ACDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAB0009-4597-43A3-A5DD-7C318A29ACDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAB0009-4597-43A3-A5DD-7C318A29ACDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAB0009-4597-43A3-A5DD-7C318A29ACDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
