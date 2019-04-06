@@ -20,17 +20,17 @@ namespace MultithreadingAndUsingReturnValue
             
             Parallel.ForEach(
                 documentsEnumerable,
-                () => ServerCommunicationStatistics.Zero(),
-                (document, loopState, localState) =>
+                localInit: () => ServerCommunicationStatistics.Zero(),
+                body: (document, loopState, localState) =>
                 {
                     var result = DocumentTranslationModule.TranslateDocument(
                         document, location, localState);
 
                     WriteDocumentToDestinationFolder(result.document, destinationFolderPath);
-      
+
                     return result.newState;
                 },
-                (localSum) =>
+                localFinally: (localSum) =>
                 {
                     lock (lockingObject)
                     {
