@@ -58,7 +58,6 @@
     <Compile Include="Paragraph.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Server1State.cs" />
     <Compile Include="SpanishTextTranslationModule.cs" />
     <Compile Include="Text.cs" />
   </ItemGroup>

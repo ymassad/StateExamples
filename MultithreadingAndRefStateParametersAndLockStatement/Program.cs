@@ -6,8 +6,6 @@ namespace MultithreadingAndRefStateParametersAndLockStatement
     {
         static void Main(string[] args)
         {
-            Server1State server1StateForLocationA = new Server1State(false, DateTime.MinValue);
-
             ServerCommunicationStatistics serverCommunicationStatisticsState = 
                 new ServerCommunicationStatistics(
                     numberOfTimesCommunicatedWithServer1: 0,
@@ -29,13 +27,11 @@ namespace MultithreadingAndRefStateParametersAndLockStatement
                             text => GermanTextTranslationModule.TranslateFromGerman(
                                 text,
                                 Location.A,
-                                ref server1StateForLocationA,
                                 ref serverCommunicationStatisticsState,
                                 serverCommunicationStatisticsStateLockingObject),
                             text => SpanishTextTranslationModule.TranslateFromSpanish(
                                 text,
                                 Location.A,
-                                ref server1StateForLocationA,
                                 ref serverCommunicationStatisticsState,
                                 serverCommunicationStatisticsStateLockingObject)))));
 

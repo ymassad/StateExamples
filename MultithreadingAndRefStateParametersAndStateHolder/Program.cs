@@ -6,8 +6,6 @@ namespace MultithreadingAndRefStateParametersAndStateHolder
     {
         static void Main(string[] args)
         {
-            Server1State server1StateForLocationA = new Server1State(false, DateTime.MinValue);
-
             var serverCommunicationStatisticsStateHolder =
                 new ThreadSafeStateHolder<ServerCommunicationStatistics>(
                     new ServerCommunicationStatistics(
@@ -28,12 +26,10 @@ namespace MultithreadingAndRefStateParametersAndStateHolder
                             text => GermanTextTranslationModule.TranslateFromGerman(
                                 text,
                                 Location.A,
-                                ref server1StateForLocationA,
                                 serverCommunicationStatisticsStateHolder),
                             text => SpanishTextTranslationModule.TranslateFromSpanish(
                                 text,
                                 Location.A,
-                                ref server1StateForLocationA,
                                 serverCommunicationStatisticsStateHolder)))));
 
             var finalState = serverCommunicationStatisticsStateHolder.GetState();

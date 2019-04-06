@@ -6,8 +6,6 @@ namespace MultithreadingAndRefStateParameters
     {
         static void Main(string[] args)
         {
-            Server1State server1StateForLocationA = new Server1State(false, DateTime.MinValue);
-
             int numberOfTimesCommunicatedWithServersState = 0;
 
             FolderProcessingModule.TranslateDocumentsInFolderInParallel(
@@ -22,12 +20,10 @@ namespace MultithreadingAndRefStateParameters
                             text => GermanTextTranslationModule.TranslateFromGerman(
                                 text,
                                 Location.A,
-                                ref server1StateForLocationA,
                                 ref numberOfTimesCommunicatedWithServersState),
                             text => SpanishTextTranslationModule.TranslateFromSpanish(
                                 text,
                                 Location.A,
-                                ref server1StateForLocationA,
                                 ref numberOfTimesCommunicatedWithServersState)))));
 
             Console.WriteLine(
