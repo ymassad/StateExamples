@@ -38,8 +38,7 @@ namespace MultithreadingAndUsingReturnValue
                     {
                         state = state.Combine(localSum);
                     }
-                }
-            );
+                });
 
             return state;
         }
