@@ -17,7 +17,7 @@ namespace MultithreadingAndRefStateParametersAndComplexCAS
             {
                 TState beforeUpdate = state;
 
-                TState updatedValue = update(arg: beforeUpdate);
+                TState updatedValue = update(beforeUpdate);
 
                 TState found = Interlocked.CompareExchange(
                     location1: ref state,
