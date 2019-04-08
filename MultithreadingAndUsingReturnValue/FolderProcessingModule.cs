@@ -17,7 +17,9 @@ namespace MultithreadingAndUsingReturnValue
             IEnumerable<Document> documentsEnumerable = GetDocumentsFromFolder(folderPath);
 
             object lockingObject = new object();
-            
+
+            var state = statisticsState;
+
             Parallel.ForEach(
                 documentsEnumerable,
                 localInit: () => ServerCommunicationStatistics.Zero(),
@@ -34,12 +36,12 @@ namespace MultithreadingAndUsingReturnValue
                 {
                     lock (lockingObject)
                     {
-                        statisticsState = statisticsState.Combine(localSum);
+                        state = state.Combine(localSum);
                     }
                 }
             );
 
-            return statisticsState;
+            return state;
         }
         
         private static void WriteDocumentToDestinationFolder(Document translatedDocument, string destinationFolderPath)
